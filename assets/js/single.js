@@ -53,7 +53,7 @@ document.getElementById('image').innerHTML = `
     <div class="left">
         <img src="${result.images[0]}" alt="Place">
     </div>
-    <div class="right">
+    <div class="right" style="width:45%">
         <img src="${result.images[1]}" alt="Place">
         <img src="${result.images[2]}" alt="Place">
         <img src="${result.images[3]}" alt="Place">
