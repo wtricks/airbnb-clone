@@ -155,16 +155,9 @@ function showBookingCostBreakdown(listing) {
 
 async function getRoomDetails() {
     const url = `https://airbnb19.p.rapidapi.com/api/v1/getPropertyDetails?propertyId=${result.id}&currency=INR`;
-    const options = {
-        method: 'GET',
-        headers: {
-            'X-RapidAPI-Key': 'f883b90791msha59eee7d63130abp1b6ef4jsn68f1a6a10240',
-            'X-RapidAPI-Host': 'airbnb19.p.rapidapi.com'
-        }
-    };
 
     try {
-        const response = await fetch(url, options);
+        const response = await fetch(url, API_KEYS);
         const result = await response.text();
         console.log(result);
     } catch (error) {
